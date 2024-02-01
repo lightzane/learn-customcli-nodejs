@@ -1,0 +1,28 @@
+{
+  "name": "learn-customcli-nodejs",
+  "version": "0.1.0",
+  "description": "Learn to create a custom `CLI` tool using nodejs",
+  "scripts": {
+    "start": "npm run build && node bin",
+    "build": "tsc --build --clean && tsc",
+    "package": "npm run build && npm pack"
+  },
+  "bin": {
+    "cli": "bin/index.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.2",
+    "yargs": "^17.7.2"
+  }
+}

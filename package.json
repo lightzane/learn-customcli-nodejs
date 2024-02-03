@@ -1,0 +1,21 @@
+{
+  "name": "learn-customcli-nodejs",
+  "version": "0.1.0",
+  "description": "Learn to create a custom `CLI` tool using nodejs",
+  "scripts": {
+    "start": "node src",
+    "reinstall": "npm uninstall -g && npm install -g"
+  },
+  "type": "module",
+  "bin": {
+    "testme": "src/index.js"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.13",
+    "yargs": "^17.7.2"
+  }
+}

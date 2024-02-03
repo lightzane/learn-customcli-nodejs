@@ -1,0 +1,30 @@
+{
+  "name": "your-cli-name",
+  "version": "0.1.0",
+  "description": "Blank template for creating custom CLI tools",
+  "scripts": {
+    "build": "npm run clean && tsc --module es6",
+    "package": "npm uninstall -g && npm run clean && tsc && npm pack",
+    "clean": "tsc --build --clean"
+  },
+  "type": "module",
+  "bin": {
+    "cli": "bin/index.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.13",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.3.3"
+  }
+}
